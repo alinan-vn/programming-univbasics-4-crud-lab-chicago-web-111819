@@ -17,13 +17,13 @@ def add_element_to_start_of_array(array, element)
 end
 
 def remove_element_from_end_of_array(array)
-  array.pop()
-  return array 
+  new = array.pop()
+  return new
 end
 
 def remove_element_from_start_of_array(array)
-  array.shift()
-  return array 
+  new = array.shift()
+  return new
 end
 
 def retrieve_element_from_index(array, index_number)
@@ -41,5 +41,5 @@ end
 
 def update_element_from_index(array, index_number, element)
   array[index_number] = element
-  return array
+  return array[index_number]
 end
